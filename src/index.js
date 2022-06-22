@@ -34,7 +34,7 @@ const Todo = () => {
   };
 
   const onCheck = (item) => {
-    console.log({item});
+    // console.log({item});
     const content = {id: item.id, text: item.text, isDone: !item.isDone};
     dispatch(todoActions.toogleTodo(content));
   };
